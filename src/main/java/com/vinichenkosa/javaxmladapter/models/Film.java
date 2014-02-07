@@ -1,6 +1,5 @@
 package com.vinichenkosa.javaxmladapter.models;
 
-import com.vinichenkosa.javaxmladapter.adapters.StringToDateAdapter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,7 +8,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement(name="film")
 @XmlAccessorType(XmlAccessType.NONE)
@@ -19,7 +17,6 @@ public class Film {
     private String title;
     @XmlElement(name = "description")
     private String description;
-    @XmlJavaTypeAdapter(StringToDateAdapter.class)
     @XmlElement(name = "releaseDate")
     private Date releaseDate;
     @XmlElementWrapper(name="actors")
