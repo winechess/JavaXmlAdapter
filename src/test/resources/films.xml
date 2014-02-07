@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<film>
+    <title>The Great Dictator</title>
+    <description>Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.</description>
+    <releaseDate>07.03.1941</releaseDate>
+    <actors>
+        <actor>
+            <name>Charles</name>
+            <surname>Chaplin</surname>
+            <character>Hynkel - Dictator of Tomania / A Jewish Barber</character>
+        </actor>
+        <actor>
+            <name>Jack</name>
+            <surname>Oakie</surname>
+            <character>Napaloni - Dictator of Bacteria</character>
+        </actor>
+         <actor>
+            <name>Reginald</name>
+            <surname>Gardiner</surname>
+            <character>Schultz</character>
+        </actor>
+         <actor>
+            <name>Henry</name>
+            <surname>Daniell</surname>
+            <character>Garbitsch</character>
+        </actor>
+         <actor>
+            <name>Billy</name>
+            <surname>Gilbert</surname>
+            <character>Herring</character>
+        </actor>
+    </actors>
+    <crew>
+        <member>Carter DeHaven</member>
+        <member>Meredith Willson</member>
+        <member>Karl Struss</member>
+        <member>Roland Totheroh</member>
+        <member>Willard Nico</member>
+        <member>Harold Rice</member>
+    </crew>
+</film>
