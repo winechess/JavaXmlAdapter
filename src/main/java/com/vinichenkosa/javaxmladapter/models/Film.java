@@ -1,6 +1,7 @@
 package com.vinichenkosa.javaxmladapter.models;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,7 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name="film")
+@XmlRootElement(name = "film")
 @XmlAccessorType(XmlAccessType.NONE)
 public class Film {
 
@@ -17,10 +18,13 @@ public class Film {
     @XmlElement(name = "description")
     private String description;
     @XmlElement(name = "releaseDate")
-    private String releaseDate;
-    @XmlElementWrapper(name="actors")
-    @XmlElement(name="actor")
+    private Date releaseDate;
+    @XmlElementWrapper(name = "actors")
+    @XmlElement(name = "actor")
     private List<Actor> actors;
+    @XmlElementWrapper(name = "crew")
+    @XmlElement(name = "member")
+    private List<Member> crew;
 
     public String getTitle() {
         return title;
@@ -38,25 +42,31 @@ public class Film {
         this.description = description;
     }
 
-    public String getReleaseDate() {
+    public Date getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(String releaseDate) {
+    public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
     }
 
     public List<Actor> getActors() {
-        if(actors == null){
+        if (actors == null) {
             actors = new ArrayList();
         }
         return actors;
     }
 
+    public List<Member> getCrew() {
+        return crew;
+    }
+
+    public void setCrew(List<Member> crew) {
+        this.crew = crew;
+    }
+
     @Override
     public String toString() {
-        return "Film{" + "title=" + title + ", description=" + 
-        description + ", releaseDate=" + releaseDate + ", actors=" +
-        actors.toString() + '}';
-    } 
+        return "Film{" + "title=" + title + ", description=" + description + ", releaseDate=" + releaseDate + ", actors=" + actors + ", crew=" + crew + '}';
+    }
 }
