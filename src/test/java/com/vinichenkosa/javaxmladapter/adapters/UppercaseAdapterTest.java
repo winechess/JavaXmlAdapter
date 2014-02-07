@@ -39,7 +39,7 @@ public class UppercaseAdapterTest {
         String sourceString = "aBcDe";
         UppercaseAdapter adapter = new UppercaseAdapter();
         //Act
-        String actualString = adapter.unmarshal(sourceString);
+        String actualString = adapter.marshal(sourceString);
         //Assert
         assertThat(actualString, is(sourceString));
     }
