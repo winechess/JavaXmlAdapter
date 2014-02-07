@@ -35,6 +35,8 @@ public class XmlUtilsTest {
         assertThat("Film must not be null",film, notNullValue());
         assertThat("List of actors must not be null", film.getActors(), notNullValue());
         assertThat("Number of actors must be equal to 5", film.getActors().size(), is(5));
+        assertThat("List of crew members must not be null", film.getCrew().size(), notNullValue());
+        assertThat("Number of members must be equal to 6", film.getCrew().size(), is(6));
     }
 
     @Test
@@ -48,6 +50,8 @@ public class XmlUtilsTest {
         assertThat("Film must not be null",film, notNullValue());
         assertThat("List of actors must not be null", film.getActors(), notNullValue());
         assertThat("Number of actors must be equal to 5", film.getActors().size(), is(5));
+        assertThat("List of crew members must not be null", film.getCrew().size(), notNullValue());
+        assertThat("Number of members must be equal to 6", film.getCrew().size(), is(6));
     }
 
 }
